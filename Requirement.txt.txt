@@ -1,0 +1,6 @@
+pandas
+numpy
+opendatasets
+kaggle
+matplotlib
+seaborn
