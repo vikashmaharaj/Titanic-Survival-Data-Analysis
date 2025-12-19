@@ -68,7 +68,7 @@ import opendatasets as od
 od.download("https://www.kaggle.com/c/titanic")
 ```
 
-✔ Automatically downloads Titanic dataset from Kaggle
+Automatically downloads Titanic dataset from Kaggle
 
 ---
 
@@ -78,7 +78,7 @@ od.download("https://www.kaggle.com/c/titanic")
 df = pd.read_csv("/content/titanic/train.csv")
 ```
 
-✔ Reads training data into a DataFrame
+Reads training data into a DataFrame
 
 ---
 
@@ -91,7 +91,7 @@ df.head()
 df.tail()
 ```
 
-✔ Understand structure and sample records
+Understand structure and sample records
 
 ---
 
@@ -101,7 +101,7 @@ df.tail()
 df.info()
 ```
 
-✔ Identifies:
+Identifies:
 
 * Total rows & columns
 * Data types
@@ -115,7 +115,7 @@ df.info()
 df.describe(include="all")
 ```
 
-✔ Shows:
+Shows:
 
 * Mean, median, min, max
 * Unique values for categorical data
@@ -128,19 +128,51 @@ df.describe(include="all")
 df.isnull().sum()
 ```
 
-✔ Detects columns with missing data (Age, Cabin, Embarked)
+Detects columns with missing data (Age, Cabin, Embarked)
 
 ---
 
-## 5. Questions Solved During Analysis
+## 5. Complete List of Problems / Questions Solved
 
-1. How many passengers survived vs not survived?
-2. Does gender affect survival?
-3. Does passenger class affect survival?
-4. Which columns contain missing values?
-5. What type of data cleaning is required?
+During this project, the following **explicit data-analysis and problem-solving questions** were addressed step by step:
 
-Each question is answered using **data inspection and statistical analysis** before model building.
+### Data Understanding Problems
+
+1. What is the total number of passengers in the dataset?
+2. How many features (columns) are present and what are their data types?
+3. Which columns are numerical and which are categorical?
+
+### Data Quality Problems
+
+4. Which columns contain missing (null) values?
+5. How many missing values are present in each column?
+6. Is the dataset complete enough to directly train a model, or does it require cleaning?
+
+### Target Variable Analysis
+
+7. What does the target column `Survived` represent?
+8. How many passengers survived and how many did not survive?
+9. Is the target variable balanced or imbalanced?
+
+### Feature–Target Relationship Problems
+
+10. Does gender (`Sex`) affect survival probability?
+11. Does passenger class (`Pclass`) influence survival?
+12. Does age appear to have an impact on survival?
+13. Does fare paid correlate with survival chances?
+
+### Structural & Modeling Readiness Problems
+
+14. Which columns are useful for prediction and which are not?
+15. Which features will require encoding before model training?
+16. Which features need imputation due to missing values?
+17. Is this problem a regression or classification problem?
+18. Which type of machine learning model would be suitable for this dataset?
+
+### Practical ML Pipeline Problems
+
+19. Can the dataset be directly fed into a machine learning algorithm?
+20. What preprocessing steps are required before training a model?
 
 ---
 
@@ -172,4 +204,5 @@ This analysis forms the **foundation for building a machine learning model** suc
 * Model evaluation
 
 ---
+
 
